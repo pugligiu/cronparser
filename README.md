@@ -14,16 +14,15 @@ when a specific command will be executed
 | Day of week  | Yes      | 0–6 or SUN–SAT  | * , - /                    |
 | Command      | Yes      | ANY             | ANY                        |
 
-
-Example of output for "2 3-10 2/22 JUN,SEP,OCT,NOV * /usr/bin/find"
-
+Give the input "2 3-10 2/22 JUN,SEP,OCT,NOV * /usr/bin/find", the output:
+<pre>
 minute        2
 hour          3 4 5 6 7 8 9 10
 day of month  2 24
 month         6 9 10 11
 day of week   0 1 2 3 4 5 6
 command       /usr/bin/find
-
+</pre>
 
 __________________________________________________________________________
                                 Python Version
@@ -58,4 +57,3 @@ There are unit tests covering most of the code paths. In order to run the
 unit tests, it is possible to use the command
 
 - python -m unittest discover -p "*_test.py"
-
