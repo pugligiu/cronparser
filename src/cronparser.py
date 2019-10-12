@@ -73,8 +73,8 @@ class CronParser:
                 import sys
                 raise ValueError("the value has to be integer or correct string name")
 
-        if values[i] < limit_inf or values[i] > limit_sup:
-            raise ValueError("the value has to be in the interval [" + str(limit_inf) + ", " + str(limit_sup) + "]")
+            if values[i] < limit_inf or values[i] > limit_sup:
+                raise ValueError("the value has to be in the interval [" + str(limit_inf) + ", " + str(limit_sup) + "]")
 
     def _parse_interval(self, interval, limit_inf, limit_sup):
         '''
